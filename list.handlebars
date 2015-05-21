@@ -1,0 +1,27 @@
+{{#each data}}
+	<li class="article-item">
+		<a href="{{newsUrl}}" class="article-item-con" >
+			<div class="figure"><img src="{{img}}" alt=""></div>
+			<h2 class="tit">{{title}}</h2>
+			<p class="info"><span class="date">{{date}}</span><span class="author">作者：<b>{{newsAuthor}}</b></span></p>
+			<p class="detail">{{summary}}</p>
+		</a>
+	</li>
+{{/each}}
+
+{{#each data}}
+<li class="item">
+	<div class="item-hd">
+		<h2 class="tit">{{title}}</h2>
+	</div>
+	<a href="{{newsUrl}}" class="item-con">
+		<div class="pic">
+			<img src="{{img}}" alt="" />
+		</div>
+		<div class="text">
+			<p class="detail">{{summary}}</p>
+			<p class="tr">{{date}}期</p>
+		</div>
+	</a>
+</li>
+{{/each}}

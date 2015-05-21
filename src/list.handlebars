@@ -1,0 +1,16 @@
+{{#each data}}
+<li class="item">
+	<div class="item-hd">
+		<h2 class="tit">{{newsTitle}}</h2>
+	</div>
+	<a href="{{newsUrl}}" class="item-con">
+		<div class="pic">
+			<img src="{{newsPic}}" alt="" />
+		</div>
+		<div class="text">
+			<p class="detail">{{newsLead}}</p>
+			<p class="tr">{{newsDate}}期</p>
+		</div>
+	</a>
+</li>
+{{/each}}
